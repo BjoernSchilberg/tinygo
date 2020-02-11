@@ -54,7 +54,7 @@ const (
 	UART_RX_PIN = D11
 )
 
-// UART1 on the Feather M0.
+// UART1 on the Gamebuino.
 var (
 	UART1 = UART{
 		Buffer: NewRingBuffer(),
@@ -73,7 +73,7 @@ const (
 	SCL_PIN = PA23 // SCL: SERCOM3/PAD[1]
 )
 
-// I2C on the Feather M0.
+// I2C on the Gamebuino.
 var (
 	I2C0 = I2C{
 		Bus:    sam.SERCOM3_I2CM,
@@ -88,7 +88,7 @@ const (
 	SPI0_MISO_PIN = PA12 // MISO: SERCOM4/PAD[0]
 )
 
-// SPI on the Feather M0.
+// SPI on the Gamebuino.
 var (
 	SPI0 = SPI{
 		Bus:    sam.SERCOM4_SPI,
@@ -100,5 +100,5 @@ var (
 const (
 	I2S_SCK_PIN = PA10
 	I2S_SD_PIN  = PA08
-	I2S_WS_PIN  = NoPin // TODO: figure out what this is on Feather M0.
+	I2S_WS_PIN  = NoPin // TODO: figure out what this is on Gamebuino.
 )
