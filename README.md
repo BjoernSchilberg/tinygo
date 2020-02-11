@@ -61,6 +61,7 @@ The following 27 microcontroller boards are currently supported:
 * [BBC micro:bit](https://microbit.org/)
 * [Digispark](http://digistump.com/products/1)
 * [Game Boy Advance](https://en.wikipedia.org/wiki/Game_Boy_Advance)
+* [Gamebuino](https://gamebuino.com)
 * [Makerdiary nRF52840-MDK](https://wiki.makerdiary.com/nrf52840-mdk/)
 * [Nordic Semiconductor PCA10031](https://www.nordicsemi.com/eng/Products/nRF51-Dongle)
 * [Nordic Semiconductor PCA10040](https://www.nordicsemi.com/eng/Products/Bluetooth-low-energy/nRF52-DK)
