@@ -40,6 +40,38 @@ const (
 
 const (
 	LED = D13
+	NEOPIXELS = D8
+
+	//LIGHTSENSOR = A7
+
+	BUTTON_LATCH = PB00
+	BUTTON_OUT   = PB30
+	BUTTON_CLK   = PB31
+
+	TFT_DC   = PB05
+	TFT_CS   = PB07
+	TFT_RST  = PA00
+	TFT_LITE = PA01
+
+	SPEAKER_ENABLE = PA27
+
+	QSPI_SCK    = PB10
+	QSPI_CS     = PB11
+	QSPI_DATA_1 = PA08
+	QSPI_DATA_2 = PA09
+	QSPI_DATA_3 = PA10
+	QSPI_DATA_4 = PA11
+)
+
+const (
+	BUTTON_LEFT_MASK   = 1
+	BUTTON_UP_MASK     = 2
+	BUTTON_DOWN_MASK   = 4
+	BUTTON_RIGHT_MASK  = 8
+	BUTTON_SELECT_MASK = 16
+	BUTTON_START_MASK  = 32
+	BUTTON_A_MASK      = 64
+	BUTTON_B_MASK      = 128
 )
 
 // UART0 aka USBCDC pins
@@ -54,7 +86,7 @@ const (
 	UART_RX_PIN = D11
 )
 
-// UART1 on the Gamebuino.
+// UART1 on the Feather M0.
 var (
 	UART1 = UART{
 		Buffer: NewRingBuffer(),
@@ -73,7 +105,7 @@ const (
 	SCL_PIN = PA23 // SCL: SERCOM3/PAD[1]
 )
 
-// I2C on the Gamebuino.
+// I2C on the Feather M0.
 var (
 	I2C0 = I2C{
 		Bus:    sam.SERCOM3_I2CM,
@@ -88,7 +120,7 @@ const (
 	SPI0_MISO_PIN = PA12 // MISO: SERCOM4/PAD[0]
 )
 
-// SPI on the Gamebuino.
+// SPI on the Feather M0.
 var (
 	SPI0 = SPI{
 		Bus:    sam.SERCOM4_SPI,
@@ -100,5 +132,6 @@ var (
 const (
 	I2S_SCK_PIN = PA10
 	I2S_SD_PIN  = PA08
-	I2S_WS_PIN  = NoPin // TODO: figure out what this is on Gamebuino.
+	I2S_WS_PIN  = NoPin // TODO: figure out what this is on Feather M0.
 )
+
