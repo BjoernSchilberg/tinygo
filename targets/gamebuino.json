@@ -1,8 +1,6 @@
 {
     "inherits": ["atsamd21g18a"],
     "build-tags": ["sam", "atsamd21g18a", "gamebuino"],
-    "flash-1200-bps-reset": "true",
-    "flash-method": "msd",
-    "msd-volume-name": "GAMEBUINOBOOT",
-    "msd-firmware-name": "firmware.uf2"
+    "flash-command": "bossac -d -i -e -w -v -R --port={port} {bin}",
+    "flash-1200-bps-reset": "true"
 }
